@@ -11,7 +11,17 @@ public class FibonacciTest {
         assertEquals(1, fibonacci(1));
     }
 
+    @Test
+    public void two() {
+        assertEquals(3, fibonacci(2));
+    }
+
     private int fibonacci(int i) {
-        return 1;
+
+        if (i <= 1) {
+            return 1;
+        } else {
+            return i + fibonacci(i - 1);
+        }
     }
 }
