@@ -7,6 +7,11 @@ import static junit.framework.TestCase.assertEquals;
 public class FibonacciTest {
 
     @Test
+    public void zero() {
+        assertEquals(0, fibonacci(0));
+    }
+
+    @Test
     public void one() {
         assertEquals(1, fibonacci(1));
     }
@@ -19,7 +24,7 @@ public class FibonacciTest {
     private int fibonacci(int i) {
 
         if (i <= 1) {
-            return 1;
+            return i;
         } else {
             return i + fibonacci(i - 1);
         }
