@@ -21,6 +21,11 @@ public class FibonacciTest {
         assertEquals(1, fibonacci(2));
     }
 
+    @Test
+    public void three() {
+        assertEquals(2, fibonacci(3));
+    }
+
     private int fibonacci(int i) {
 
         if (i <= 1) {
