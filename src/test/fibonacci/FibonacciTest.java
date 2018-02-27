@@ -18,7 +18,7 @@ public class FibonacciTest {
 
     @Test
     public void two() {
-        assertEquals(3, fibonacci(2));
+        assertEquals(1, fibonacci(2));
     }
 
     private int fibonacci(int i) {
@@ -26,7 +26,7 @@ public class FibonacciTest {
         if (i <= 1) {
             return i;
         } else {
-            return i + fibonacci(i - 1);
+            return fibonacci(i - 1) + fibonacci(i - 2);
         }
     }
 }
