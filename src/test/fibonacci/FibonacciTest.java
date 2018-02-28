@@ -32,11 +32,6 @@ public class FibonacciTest {
     }
 
     private int fibonacci(int i) {
-
-        if (i <= 1) {
-            return i;
-        } else {
-            return fibonacci(i - 1) + fibonacci(i - 2);
-        }
+        return i <= 1 ? i : fibonacci(i - 1) + fibonacci(i - 2);
     }
 }
